@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="displayDataPlugin.js"></script>
+</head>
+<body>
+    <div id="data-container"></div>
+
+    <script>
+        $(document).ready(function(){
+            $('#data-container').displayData({
+                url: 'iris.json'
+            });
+        });
+    </script>
+</body>
+</html>
